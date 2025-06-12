@@ -1,0 +1,44 @@
+@layer base {
+  :root {
+    --color-primary: #4b93a2;
+    --color-secondary: #317a86;
+    --color-accent: #72b5c1;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+}
+
+/* Fonts */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.rubik-gemstones {
+  font-family: "Rubik Gemstones", cursive;
+}
+.sacramento {
+  font-family: "Sacramento", cursive;
+}
+.shadows-into-light {
+  font-family: "Shadows Into Light", cursive;
+}
+.anton {
+  font-family: "Anton", cursive;
+}
