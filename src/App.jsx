@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import EventsPage from "./pages/EventsPage";
 import GivePage from "./pages/GivePage";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/give" element={<GivePage />} />
+      <Route path="/about" element={<AboutPage />} />
     </Route>
   )
 );
