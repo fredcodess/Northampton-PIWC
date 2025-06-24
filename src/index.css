@@ -27,18 +27,12 @@
 }
 
 /* Fonts */
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.playfair {
+  font-family: "Playfair Display", serif;
 }
-.rubik-gemstones {
-  font-family: "Rubik Gemstones", cursive;
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
 }
-.sacramento {
-  font-family: "Sacramento", cursive;
-}
-.shadows-into-light {
-  font-family: "Shadows Into Light", cursive;
-}
-.anton {
-  font-family: "Anton", cursive;
+.oswald {
+  font-family: "Oswald", sans-serif;
 }
