@@ -2,7 +2,10 @@ import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok } from "react-icons/fa";
 
 const socials = [
   { icon: FaInstagram, url: "https://www.instagram.com/northampton.piwc/" },
-  { icon: FaFacebookF, url: "https://facebook.com" },
+  {
+    icon: FaFacebookF,
+    url: "https://www.facebook.com/profile.php?id=61555727295908",
+  },
   { icon: FaYoutube, url: "https://www.youtube.com/@northamptonPIWC" },
   { icon: FaTiktok, url: "https://www.tiktok.com/@northampton_piwc" },
 ];

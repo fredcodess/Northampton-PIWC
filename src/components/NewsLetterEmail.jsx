@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 const NewsLetterEmail = () => {
   const joinForm = useRef();
-  const userID = process.env.EmailJSUserID;
+  const userID = "process.env.EmailJSUserID";
 
   useEffect(() => {
     emailjs.init(userID);
@@ -11,8 +11,8 @@ const NewsLetterEmail = () => {
 
   const handleJoinSubmit = (e) => {
     e.preventDefault();
-    const serviceID = process.env.EmailJSServiceID;
-    const templateID = process.env.EmailJSTemplateID;
+    const serviceID = "process.env.EmailJSServiceID";
+    const templateID = "process.env.EmailJSTemplateID";
 
     emailjs.sendForm(serviceID, templateID, joinForm.current).then(
       (response) => {

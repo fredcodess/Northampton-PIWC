@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @layer base {
   :root {
     --color-primary: #4b93a2;

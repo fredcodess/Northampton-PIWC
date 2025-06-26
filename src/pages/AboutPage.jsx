@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react";
-
+import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 const AboutPage = () => {
-  const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  useTitle("About Us");
   return (
     <main className="flex-grow pt-20">
       <section id="about" className="container mx-auto px-4 py-12">
@@ -93,12 +90,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <button
-        onClick={handleBackToTop}
-        className="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-110"
-      >
-        <ArrowUp />
-      </button>
+      <ScrollToTop />
     </main>
   );
 };

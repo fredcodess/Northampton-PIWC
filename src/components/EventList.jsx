@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const EventList = () => {
   const [events, setEvents] = useState([]);
-  const API_KEY = process.env.Calendar_API_Key;
-  const CALENDAR_ID = process.env.Calendar_ID;
+  const API_KEY = import.meta.env.Calendar_API_Key;
+  const CALENDAR_ID = import.meta.env.Calendar_ID;
 
   useEffect(() => {
     const fetchEvents = async () => {

@@ -1,7 +1,10 @@
 import { TypeAnimation } from "react-type-animation";
 import { ContactFormHandler } from "../components/ContactFormHandler";
+import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const ContactPage = () => {
+  useTitle("Contact Us");
   return (
     <div className="min-h-screen bg-white text-black">
       <div className="text-center py-16">
@@ -27,7 +30,7 @@ const ContactPage = () => {
           <p>
             <strong className="text-cyan-700 uppercase">Phone:</strong>{" "}
             <a href="tel:+441234567890" className="text-black">
-              +44 1234 567890
+              +44 7904 354927
             </a>
           </p>
           <p>
@@ -36,15 +39,7 @@ const ContactPage = () => {
               info@northamptonpiwc.org.uk
             </a>
           </p>
-          <p className="text-black">
-            <strong className="text-cyan-700 uppercase">
-              Operating Hours:
-            </strong>{" "}
-            Mon – Fri, 9:00 AM – 5:00 PM
-          </p>
         </div>
-
-        {/* Form */}
         <ContactFormHandler />
       </section>
       <div className="text-center mt-20 mb-12">
@@ -88,6 +83,7 @@ const ContactPage = () => {
           </p>
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -7,6 +9,7 @@ const fadeInVariant = {
 };
 
 const GivePage = () => {
+  useTitle("Give");
   return (
     <div
       style={{
@@ -123,6 +126,7 @@ const GivePage = () => {
           />
         </motion.div>
       </div>
+      <ScrollToTop />
     </div>
   );
 };

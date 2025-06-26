@@ -5,7 +5,6 @@ const Menus = [
     subMenu: [
       { name: "WHO ARE WE", to: "/about" },
       { name: "BELIEFS & PRINCIPLES", to: "/beliefs" },
-      { name: "LEADERSHIP", to: "/leadership" },
       { name: "VALUES", to: "/values" },
     ],
     gridCols: 2,
@@ -14,9 +13,10 @@ const Menus = [
     name: "Ministries",
     subMenu: [
       { name: "WOMEN'S MINISTRY", to: "/womens-ministry" },
-      { name: "MENS MINISTRY", to: "/mens-ministry" },
+      { name: "MEN'S MINISTRY", to: "/mens-ministry" },
       { name: "YOUTH MINISTRY", to: "/youth-ministry" },
       { name: "CHILDREN MINISTRY", to: "/children-ministry" },
+      { name: "EVANGELISM MINISTRY", to: "/evangelism-ministry" },
     ],
     gridCols: 3,
   },
