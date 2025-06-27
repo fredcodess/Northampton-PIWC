@@ -17,11 +17,19 @@ export default function MobMenu({ Menus }) {
       height: "auto",
       opacity: 1,
       overflow: "hidden",
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
     },
     exit: {
       height: 0,
       opacity: 0,
       overflow: "hidden",
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
     },
   };
 
@@ -32,10 +40,10 @@ export default function MobMenu({ Menus }) {
       </button>
 
       <motion.div
-        className="fixed left-0 right-0 top-16 overflow-y-auto h-full bg- backdrop-blur text-white p-6 pb-20"
+        className="fixed left-0 right-0 top-16 overflow-y-auto h-full bg-primary text-white p-6 pb-20"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
-        transition={{ type: "spring", stiffness: 300 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
       >
         <ul>
           {Menus.map(({ name, to, subMenu }, i) => {
@@ -51,7 +59,7 @@ export default function MobMenu({ Menus }) {
                   >
                     {name}
                     <ChevronDown
-                      className={`transition-transform ${
+                      className={`transition-transform duration-300 ${
                         isClicked ? "rotate-180" : ""
                       }`}
                     />

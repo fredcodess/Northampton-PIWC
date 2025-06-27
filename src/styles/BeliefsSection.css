@@ -1,0 +1,96 @@
+.beliefs-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 4rem 2rem;
+  background-color: #fff; /* Adjust as needed */
+}
+
+.beliefs-heading {
+  font-size: 4rem;
+  text-align: center;
+  color: #e94f37; /* Accent color */
+  margin-bottom: 2rem;
+}
+
+.beliefs-description {
+  font-size: 1.25rem;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: opacity 0.9s ease 0.4s;
+  white-space: pre-wrap;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 800px;
+}
+
+.accordion-item {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-content {
+  max-width: 300px;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.3s ease;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.accordion-icon .plus__horizontal-line,
+.accordion-icon .plus__vertical-line {
+  position: absolute;
+  background-color: #333;
+  height: 3px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.accordion-icon .plus__vertical-line {
+  transform: rotate(90deg);
+}
+
+.accordion-divider {
+  height: 1px;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+/* Optional transition effects */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnim 0.9s ease forwards;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+  }
+}

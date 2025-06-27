@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { PlayCircle, Church, BookOpen, HelpingHand } from "lucide-react";
+import { PlayCircle } from "lucide-react";
+import { MdOutlineFamilyRestroom } from "react-icons/md";
+import { FaBookBible } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
+import WhatWeBelieve from "../components/WhatWeBelieve";
 
 const bgImages = [
   "/media/home-1.jpeg",
@@ -70,6 +74,22 @@ const HomePage = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const svg = (
+    <svg
+      className="w-8 h-8 text-white"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+      />
+    </svg>
+  );
 
   return (
     <div className="flex-grow">
@@ -139,22 +159,19 @@ const HomePage = () => {
       <section className="relative -mt-20 z-30 container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <QuickAccessCard
-            icon={Church}
-            title="New Here?"
-            description="Learn what to expect"
-            link="/new-here"
+            icon={FaHeart}
+            title="Love"
+            description="Spreading God's love through our actions and words"
           />
           <QuickAccessCard
-            icon={HelpingHand}
-            title="Get Involved"
-            description="Join our ministries"
-            link="/ministries"
+            icon={MdOutlineFamilyRestroom}
+            title="Community"
+            description="Building strong bonds within our church family"
           />
           <QuickAccessCard
-            icon={BookOpen}
-            title="Baptism"
-            description="Submit your request"
-            link="/baptism"
+            icon={FaBookBible}
+            title="Growth"
+            description="Encouraging spiritual development and discipleship"
           />
         </div>
       </section>
@@ -247,100 +264,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* MISSION */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-8 bebas">
-              Our Mission
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              "To spread the love of Christ through worship, fellowship, and
-              service to our community..."
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: "#317a86" }}
-                >
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Love
-                </h3>
-                <p className="text-gray-600">
-                  Spreading God's love through our actions and words
-                </p>
-              </div>
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: "#317a86" }}
-                >
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Community
-                </h3>
-                <p className="text-gray-600">
-                  Building strong bonds within our church family
-                </p>
-              </div>
-              <div className="text-center">
-                <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: "#317a86" }}
-                >
-                  <svg
-                    className="w-8 h-8 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Growth
-                </h3>
-                <p className="text-gray-600">
-                  Encouraging spiritual development and discipleship
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WhatWeBelieve />
 
       <ScrollToTop />
     </div>
