@@ -7,12 +7,12 @@ const ContactPage = () => {
   useTitle("Contact Us");
   return (
     <div className="min-h-screen bg-white text-black">
-      <div className="text-center py-16">
+      <div className="text-center py-16 playfair">
         <TypeAnimation
           sequence={["Contact Us", 1000]}
           speed={50}
           repeat={Infinity}
-          className="font-extrabold text-cyan-700 text-5xl md:text-7xl uppercase tracking-widest"
+          className="font-extrabold text-cyan-700 text-5xl md:text-7xl uppercase tracking-widest "
         />
       </div>
 
@@ -42,7 +42,7 @@ const ContactPage = () => {
         </div>
         <ContactFormHandler />
       </section>
-      <div className="text-center mt-20 mb-12">
+      <div className="text-center mt-20 mb-12 playfair">
         <TypeAnimation
           sequence={["Find Us", 1000]}
           speed={50}

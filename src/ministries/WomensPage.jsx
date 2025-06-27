@@ -38,7 +38,7 @@ const WomensPage = () => {
         <div className="absolute inset-0 bg-black/30 z-10"></div>
 
         <div className="relative z-20 text-center px-4">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white border-4 border-white inline-block px-6 py-3">
+          <h1 className="text-5xl lg:text-6xl font-bold text-white border-4 border-white inline-block px-6 py-3 bebas">
             {ministryData.title}
           </h1>
         </div>
@@ -53,13 +53,13 @@ const WomensPage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-10">
-            <svg viewBox="0 0 500 100" className="w-full h-20 mx-auto">
+            <svg viewBox="0 0 500 100" className="w-full h-20 mx-auto ">
               <text
                 x="50%"
                 y="50%"
                 dominantBaseline="middle"
                 textAnchor="middle"
-                className="fill-teal-600 font-bold"
+                className="fill-teal-600 font-bold "
                 style={{
                   fontFamily: "serif",
                   fontSize: "28px",

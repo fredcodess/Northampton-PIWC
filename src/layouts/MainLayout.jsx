@@ -7,7 +7,7 @@ function MainLayout() {
     <>
       <div className="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
         <Navbar />
-        <div className="pt-20">
+        <div className="pt-20 oswald">
           <Outlet />
         </div>
         <Footer />

@@ -3,7 +3,7 @@ import React from "react";
 const ValuePage = () => {
   return (
     <div>
-      <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-20 font-bold text-7xl text-gray-100 leading-tight">
+      <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-20 font-bold text-7xl text-gray-100 leading-tight bebas">
         our <br /> core <br /> values
       </div>
       <div className="p-10 md:p-32 space-y-10">

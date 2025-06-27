@@ -44,7 +44,7 @@ const YouthPage = () => {
         ))}
         <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="relative z-20 text-center px-4">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white border-4 border-white inline-block px-6 py-3">
+          <h1 className="text-5xl lg:text-6xl font-bold text-white border-4 border-white inline-block px-6 py-3 bebas">
             {ministryData.title}
           </h1>
         </div>

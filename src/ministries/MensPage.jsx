@@ -18,12 +18,16 @@ const MensPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section
-        className="h-screen bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: `url(${ministryData.image})` }}
-      >
-        <div className="bg-black/50 p-10 rounded-lg text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold border-4 border-white px-6 py-3 inline-block">
+      <section className="relative h-screen overflow-hidden hidden md:flex items-center justify-center">
+        <div
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000`}
+          style={{ backgroundImage: `url(${ministryData.image})` }}
+        />
+
+        <div className="absolute inset-0 bg-black/30 z-10"></div>
+
+        <div className="relative z-20 text-center px-4">
+          <h1 className="text-5xl lg:text-6xl font-bold text-white border-4 border-white inline-block px-6 py-3 bebas">
             {ministryData.title}
           </h1>
         </div>

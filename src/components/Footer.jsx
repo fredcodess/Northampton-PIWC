@@ -21,7 +21,7 @@ const Footer = () => {
                 href="/ministries"
                 className="hover:text-white transition-colors"
               >
-                Ministries
+                About Us
               </a>
             </li>
             <li>
@@ -30,35 +30,62 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/sermons" className="hover:text-white transition-colors">
-                Sermons
+              <a href="/contact" className="hover:text-white transition-colors">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="/give" className="hover:text-white transition-colors">
+                Give
               </a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-xl font-bold mb-4">Connect</h3>
-          <div className="flex space-x-4">
-            <a
-              href="https://www.facebook.com/"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <i className="fab fa-facebook text-2xl"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <i className="fab fa-instagram text-2xl"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <i className="fab fa-youtube text-2xl"></i>
-            </a>
-          </div>
+          <h3 className="text-xl font-bold mb-4">Minitries</h3>
+          <ul className="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="/mens-ministry"
+                className="hover:text-white transition-colors"
+              >
+                Men's Ministry
+              </a>
+            </li>
+            <li>
+              <a
+                href="/womens-ministry"
+                className="hover:text-white transition-colors"
+              >
+                Women's Ministry
+              </a>
+            </li>
+            <li>
+              <a
+                href="/youth-ministry"
+                className="hover:text-white transition-colors"
+              >
+                Youth Ministry
+              </a>
+            </li>
+            <li>
+              <a
+                href="/childrens-ministry"
+                className="hover:text-white transition-colors"
+              >
+                Children's Ministry
+              </a>
+            </li>
+            <li>
+              <a
+                href="/evangelism-ministry"
+                className="hover:text-white transition-colors"
+              >
+                Evangelism Ministry
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div>
@@ -67,7 +94,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+      <div className="border-t border-gray-800 mt-8 mb-8 pt-8 text-center text-gray-400">
         <p>
           &copy; {new Date().getFullYear()} Northampton PIWC. All Rights
           Reserved.

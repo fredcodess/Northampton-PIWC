@@ -6,7 +6,7 @@ const AboutPage = () => {
     <main className="flex-grow pt-20">
       <section id="about" className="container mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-primary text-center">
+          <h2 className="text-3xl font-bold text-primary text-center bebas">
             About Us
           </h2>
           <p className="mt-4 text-gray-700 text-center">
@@ -19,7 +19,7 @@ const AboutPage = () => {
 
       <section id="mission" className="container mx-auto px-4 py-12">
         <div className="bg-gray-200 rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-primary">Our Mission</h2>
+          <h2 className="text-3xl font-bold text-primary bebas">Our Mission</h2>
           <p className="mt-2 text-gray-700">
             At Northampton PIWC, our mission is to:
           </p>
@@ -35,7 +35,7 @@ const AboutPage = () => {
 
       <section id="vision" className="container mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-primary">Our Vision</h2>
+          <h2 className="text-3xl font-bold text-primary bebas">Our Vision</h2>
           <p className="mt-2 text-gray-700">
             We envision a church where people grow in faith, impact society, and
             live Christ-centred lives.
@@ -45,7 +45,9 @@ const AboutPage = () => {
 
       <section id="beliefs" className="container mx-auto px-4 py-12">
         <div className="bg-gray-200 rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-primary">What We Believe</h2>
+          <h2 className="text-3xl font-bold text-primary bebas">
+            What We Believe
+          </h2>
           <ul className="mt-4 text-gray-700 list-disc list-inside">
             <li>The Bible is the inspired Word of God.</li>
             <li>Jesus Christ is the foundation of salvation.</li>
@@ -66,7 +68,7 @@ const AboutPage = () => {
 
       <section id="services" className="container mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-primary">
+          <h2 className="text-3xl font-bold text-primary bebas">
             Our Worship Services
           </h2>
           <ul className="mt-4 text-gray-700 list-disc list-inside">

@@ -13,7 +13,7 @@ const GivePage = () => {
   return (
     <div
       style={{
-        background: "linear-gradient(rgba(75,147,162,255), rgb(0, 36, 55))",
+        background: "linear-gradient(rgba(75,147,162,255), rgb(30, 66, 85))",
       }}
       className="min-h-screen text-black"
     >
@@ -25,7 +25,7 @@ const GivePage = () => {
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariant}
         >
-          <motion.h1 className="text-4xl sm:text-5xl md:text-[10rem] font-bold mb-6 anton leading-tight">
+          <motion.h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 anton leading-tight">
             YOU CANNOT <br /> OUTGIVE GOD
           </motion.h1>
           <motion.p className="text-lg md:text-xl mb-8 px-4 font-semibold">
@@ -71,9 +71,7 @@ const GivePage = () => {
             className="text-center md:text-left"
             variants={fadeInVariant}
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 anton">
-              IN-PERSON
-            </h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 ">IN-PERSON</h2>
             <p className="text-lg md:text-xl font-semibold">
               You can give in person during our Sunday experience at Northampton
               PIWC. <br />

@@ -47,7 +47,7 @@ const ministries = [
   {
     name: "Children's MINISTRY",
     image: "/media/ChildrensMin.png",
-    href: "/childrens-ministry",
+    href: "/children-ministry",
   },
   {
     name: "Youth's MINISTRY",
@@ -93,10 +93,10 @@ const HomePage = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-8xl font-bold mb-6 montserrat"
+            className="text-5xl md:text-8xl font-bold mb-6 playfair"
           >
             Welcome To <br />
-            <span className="mt-10 text-5xl md:text-9xl text-cyan-700 drop-shadow-xl/50">
+            <span className="mt-10 text-5xl md:text-9xl text-cyan-700 drop-shadow-xl/50 bebas">
               Northampton PIWC
             </span>
           </motion.h1>
@@ -108,7 +108,7 @@ const HomePage = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-extrabold text-white md:text-4xl tracking-widest"
+            className="font-extrabold text-white md:text-4xl tracking-widest playfair"
           />
 
           <motion.div
@@ -119,7 +119,7 @@ const HomePage = () => {
           >
             <a
               href="https://www.youtube.com/@northamptonPIWC"
-              className="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-secondary transition-all transform hover:scale-105 flex items-center"
+              className="bg-primary oswald text-white px-8 py-3 rounded-full font-medium hover:bg-secondary transition-all transform hover:scale-105 flex items-center"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -127,7 +127,7 @@ const HomePage = () => {
             </a>
             <Link
               to="/events"
-              className="bg-white text-primary px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-all transform hover:scale-105"
+              className="bg-white oswald text-primary px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-all transform hover:scale-105"
             >
               Service Times
             </Link>
@@ -168,7 +168,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="uppercase font-bold text-4xl md:text-5xl mb-4">
+            <h2 className="uppercase font-bold text-4xl md:text-5xl mb-4 playfair">
               <span className="text-cyan-800 sacramento">Worship</span> with us
             </h2>
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
@@ -216,7 +216,7 @@ const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-white text-4xl md:text-6xl font-bold mb-12"
+            className="text-white text-4xl md:text-6xl font-bold mb-12 bebas"
           >
             MINISTRY GROUPS
           </motion.h2>
@@ -251,7 +251,7 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-8">
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-8 bebas">
               Our Mission
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
