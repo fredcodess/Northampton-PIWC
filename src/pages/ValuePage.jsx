@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../components/useTitle";
 
 const ValuePage = () => {
+  useTitle("Values");
   return (
     <div>
       <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-20 font-bold text-7xl text-gray-100 leading-tight bebas">

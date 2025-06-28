@@ -1,6 +1,7 @@
 import React from "react";
 import GetInTouch from "../components/GetInTouch";
 import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const MensPage = () => {
   const ministryData = {
@@ -15,6 +16,7 @@ const MensPage = () => {
     ],
     contact: "",
   };
+  useTitle("Men's Ministey");
 
   return (
     <div className="min-h-screen">

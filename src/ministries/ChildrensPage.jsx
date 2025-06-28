@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GetInTouch from "../components/GetInTouch";
 import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const ChildrensPage = () => {
   const ministryData = {
@@ -22,6 +23,7 @@ const ChildrensPage = () => {
     ],
     contact: "Sister Lisa Brown - children@northamptonpiwc.org",
   };
+  useTitle("Children's Ministey");
 
   const [currentImage, setCurrentImage] = useState(0);
   const totalImages = ministryData.image.length;

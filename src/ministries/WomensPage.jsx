@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GetInTouch from "../components/GetInTouch";
 import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const WomensPage = () => {
   const ministryData = {
@@ -11,6 +12,7 @@ const WomensPage = () => {
       "/media/women-1.jpeg",
     ],
   };
+  useTitle("Women's Ministey");
 
   const [currentImage, setCurrentImage] = useState(0);
   const totalImages = ministryData.image.length;

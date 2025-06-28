@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import WhatWeBelieve from "../components/WhatWeBelieve";
+import useTitle from "../components/useTitle";
 
 const bgImages = [
   "/media/home-1.jpeg",
@@ -67,6 +68,8 @@ const ministries = [
 
 const HomePage = () => {
   const [currentImage, setCurrentImage] = useState(0);
+
+  useTitle("Home");
 
   useEffect(() => {
     const interval = setInterval(() => {

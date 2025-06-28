@@ -1,6 +1,9 @@
 import React from "react";
+import useTitle from "../components/useTitle";
 
 const EvangelismPage = () => {
+  useTitle("Evangelism Ministey");
+
   return (
     <div>
       <section className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-10 md:p-20 font-bold text-4xl md:text-7xl text-gray-100 leading-tight">

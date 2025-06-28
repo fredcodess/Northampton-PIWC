@@ -1,4 +1,5 @@
 import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const beliefsData = [
   {
@@ -59,6 +60,7 @@ const beliefsData = [
 ];
 
 const BeliefsPage = () => {
+  useTitle("Beliefs");
   return (
     <div>
       <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-10 md:p-20 font-bold text-4xl md:text-7xl text-gray-100 leading-tight bebas">

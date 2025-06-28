@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import GetInTouch from "../components/GetInTouch";
 import ScrollToTop from "../components/ScrollToTop";
+import useTitle from "../components/useTitle";
 
 const YouthPage = () => {
+  useTitle("Youth Ministey");
   const ministryData = {
     title: "Youth & Pensa",
     image: ["/media/youth-4.jpg", "/media/youth-6.jpg", "/media/youth-2.jpeg"],
