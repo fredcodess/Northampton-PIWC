@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ScrollToTop from "../components/ScrollToTop";
 import useTitle from "../components/useTitle";
+import GiveModal from "../components/GiveModal";
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -10,16 +11,17 @@ const fadeInVariant = {
 
 const GivePage = () => {
   useTitle("Give");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div
       style={{
         background: "linear-gradient(rgba(75,147,162,255), rgb(30, 66, 85))",
       }}
-      className="min-h-screen text-black"
+      className="min-h-screen text-white"
     >
-      <div className="px-6 py-16 md:py-24 text-center">
+      <div className="px-6 py-16 md:py-24 text-center text-white">
         <motion.div
-          className="relative z-20 text-black max-w-4xl mx-auto"
+          className="relative z-20 text-white max-w-4xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -28,7 +30,7 @@ const GivePage = () => {
           <motion.h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 anton leading-tight">
             YOU CANNOT <br /> OUTGIVE GOD
           </motion.h1>
-          <motion.p className="text-lg md:text-xl mb-8 px-4 font-semibold">
+          <motion.p className="text-lg md:text-xl mb-8 px-4 text-white font-semibold">
             At Northampton PIWC, we give as an act of worship because God first
             gave to us! Not out of obligation, but believing that God will use
             our giving to continue transforming lives forever. Learn more about
@@ -112,9 +114,14 @@ const GivePage = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
+              onClick={() => setIsModalOpen(true)}
             >
               ONLINE GIVING
             </motion.button>
+            <GiveModal
+              isOpen={isModalOpen}
+              onClose={() => setIsModalOpen(false)}
+            />
           </motion.div>
           <motion.img
             src="/media/cardpay.jpg"

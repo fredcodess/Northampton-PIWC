@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="/events" element={<EventsPage />} />
       <Route path="/give" element={<GivePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/children-ministry" element={<ChildrensPage />} />
+      <Route path="/childrens-ministry" element={<ChildrensPage />} />
       <Route path="/womens-ministry" element={<WomensPage />} />
       <Route path="/mens-ministry" element={<MensPage />} />
       <Route path="/youth-ministry" element={<YouthPage />} />

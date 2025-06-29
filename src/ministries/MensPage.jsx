@@ -14,7 +14,6 @@ const MensPage = () => {
       "Men's Conference",
       "Mentorship and Discipleship",
     ],
-    contact: "",
   };
   useTitle("Men's Ministey");
 

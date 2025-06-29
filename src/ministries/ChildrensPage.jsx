@@ -21,7 +21,6 @@ const ChildrensPage = () => {
       "Kids' Choir",
       "Family Fun Days",
     ],
-    contact: "Sister Lisa Brown - children@northamptonpiwc.org",
   };
   useTitle("Children's Ministey");
 
@@ -103,13 +102,6 @@ const ChildrensPage = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-teal-600 mb-4">
-                  Contact
-                </h3>
-                <p className="text-gray-600">{ministryData.contact}</p>
               </div>
             </div>
           </div>

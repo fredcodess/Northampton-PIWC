@@ -18,7 +18,6 @@ const YouthPage = () => {
       "Youth Camps",
       "Family Fun Days",
     ],
-    contact: "youth@churchdomain.com",
     video: ["/media/football-game.mp4", "/media/pensa.mp4"],
   };
 
@@ -141,13 +140,6 @@ const YouthPage = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-teal-600 mb-2">
-                  Contact
-                </h3>
-                <p className="text-gray-600">{ministryData.contact}</p>
               </div>
             </div>
           </div>

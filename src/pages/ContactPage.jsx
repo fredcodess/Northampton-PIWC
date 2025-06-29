@@ -35,8 +35,8 @@ const ContactPage = () => {
           </p>
           <p>
             <strong className="text-cyan-700 uppercase">Email:</strong>{" "}
-            <a href="mailto:info@northamptonpiwc.org.uk" className="text-black">
-              info@northamptonpiwc.org.uk
+            <a href="mailto:npiwc24@gmail.com" className="text-black">
+              npiwc24@gmail.com
             </a>
           </p>
         </div>

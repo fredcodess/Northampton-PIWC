@@ -63,8 +63,8 @@ const BeliefsPage = () => {
   useTitle("Beliefs");
   return (
     <div>
-      <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-10 md:p-20 font-bold text-4xl md:text-7xl text-gray-100 leading-tight bebas">
-        our <br /> beliefs <br /> & <br /> principles
+      <div className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-10 md:p-20 font-bold text-4xl md:text-7xl text-gray-100 leading-tight text-center bebas">
+        our beliefs & principles
       </div>
       <div className="p-6 md:p-32 space-y-12">
         {beliefsData.map(({ img, title, desc }, index) => (

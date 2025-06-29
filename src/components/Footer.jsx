@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import NewsLetterEmail from "./NewsLetterEmail";
 
 const Footer = () => {
@@ -17,73 +18,76 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <a
-                href="/ministries"
+              <Link
+                to="/ministries"
                 className="hover:text-white transition-colors"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/events" className="hover:text-white transition-colors">
+              <Link to="/events" className="hover:text-white transition-colors">
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white transition-colors">
+              <Link
+                to="/contact"
+                className="hover:text-white transition-colors"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/give" className="hover:text-white transition-colors">
+              <Link to="/give" className="hover:text-white transition-colors">
                 Give
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-xl font-bold mb-4">Minitries</h3>
+          <h3 className="text-xl font-bold mb-4">Ministries</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <a
-                href="/mens-ministry"
+              <Link
+                to="/mens-ministry"
                 className="hover:text-white transition-colors"
               >
                 Men's Ministry
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/womens-ministry"
+              <Link
+                to="/womens-ministry"
                 className="hover:text-white transition-colors"
               >
                 Women's Ministry
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/youth-ministry"
+              <Link
+                to="/youth-ministry"
                 className="hover:text-white transition-colors"
               >
                 Youth Ministry
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/childrens-ministry"
+              <Link
+                to="/childrens-ministry"
                 className="hover:text-white transition-colors"
               >
                 Children's Ministry
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/evangelism-ministry"
+              <Link
+                to="/evangelism-ministry"
                 className="hover:text-white transition-colors"
               >
                 Evangelism Ministry
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

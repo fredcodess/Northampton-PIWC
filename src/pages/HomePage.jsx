@@ -169,7 +169,7 @@ const HomePage = () => {
           <QuickAccessCard
             icon={MdOutlineFamilyRestroom}
             title="Community"
-            description="Building strong bonds within our church family"
+            description="Building strong bonds within our church family     uuhdsu"
           />
           <QuickAccessCard
             icon={FaBookBible}

@@ -15,7 +15,7 @@ const Menus = [
       { name: "WOMEN'S MINISTRY", to: "/womens-ministry" },
       { name: "MEN'S MINISTRY", to: "/mens-ministry" },
       { name: "YOUTH MINISTRY", to: "/youth-ministry" },
-      { name: "CHILDREN MINISTRY", to: "/children-ministry" },
+      { name: "CHILDREN'S MINISTRY", to: "/childrens-ministry" },
       { name: "EVANGELISM MINISTRY", to: "/evangelism-ministry" },
     ],
     gridCols: 3,

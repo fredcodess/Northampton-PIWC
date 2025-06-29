@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const GetInTouch = ({ title }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/contact");
+  };
   return (
     <section className="py-16 bg-teal-50">
       <div className="container mx-auto px-4 text-center max-w-4xl">
@@ -12,11 +17,7 @@ const GetInTouch = ({ title }) => {
           are and experience the love and fellowship that awaits you.
         </p>
         <button
-          onClick={() =>
-            document
-              .getElementById("contact-section")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={handleClick}
           className="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-teal-700 transition-colors duration-300 transform hover:scale-105"
         >
           Get In Touch
