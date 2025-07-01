@@ -28,13 +28,13 @@ const ContactPage = () => {
 
         <div className="mb-10 text-base text-white space-y-4">
           <p>
-            <strong className="text-cyan-700 uppercase">Phone:</strong>{" "}
+            <strong className="text-cyan-700 uppercase">Phone:</strong>
             <a href="tel:+441234567890" className="text-black">
               +44 7904 354927
             </a>
           </p>
           <p>
-            <strong className="text-cyan-700 uppercase">Email:</strong>{" "}
+            <strong className="text-cyan-700 uppercase">Email:</strong>
             <a href="mailto:npiwc24@gmail.com" className="text-black">
               npiwc24@gmail.com
             </a>
@@ -73,11 +73,11 @@ const ContactPage = () => {
             Unit L27, NN5 7QS <br /> Northampton NN5 7QS <br />
             <span className="text-cyan-700 font-extrabold uppercase tracking-widest">
               Hours
-            </span>{" "}
+            </span>
             <br />
             <span className="ttext-cyan-700 font-extrabold uppercase tracking-widest">
               Sundays
-            </span>{" "}
+            </span>
             <br />
             10:00 AM - 12:30 PM
           </p>

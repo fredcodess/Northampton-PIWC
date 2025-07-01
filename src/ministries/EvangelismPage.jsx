@@ -2,35 +2,60 @@ import React from "react";
 import useTitle from "../components/useTitle";
 
 const EvangelismPage = () => {
-  useTitle("Evangelism Ministey");
+  useTitle("Evangelism Ministry");
 
   return (
-    <div>
-      <section className="bg-gradient-to-r from-indigo-500 to-teal-400 uppercase p-10 md:p-20 font-bold text-4xl md:text-7xl text-gray-100 leading-tight">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              Evangelism Ministry
-            </h1>
-          </div>
+    <div className="bg-white">
+      {/* Header Section */}
+      <section className="bg-gradient-to-r from-indigo-600 to-teal-500 uppercase py-16 px-6 md:py-24 text-center text-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-wide drop-shadow">
+            Evangelism Ministry
+          </h1>
         </div>
       </section>
-      <section className="p-16">
-        <p className="text-gray-600 leading-relaxed mb-8">
-          This is the evangelistic wing of the Church. This Ministry undertakes
-          gospel rallies, crusades, conventions, house to-house evangelism, and
-          other forms of evangelism, etc. <br /> These include preaching,
-          witnessing, winning and disciplining souls, and encouraging church
-          members to participate in the programmes and activities of the Church
-          and to further expose them to the various ministries within the
-          Church. It affords members of the Church the opportunity to plan and
-          organise programmes and activities for evangelism in villages, towns
-          and cities and other specialised evangelism-related ministries. <br />
-          It also carries out counselling sessions and ministers to prisoners
-          and Rastafarians, emerging religious groups, the physically
-          challenged, drug addicts, politicians and in hospitals; organises
-          beach events and any other specialised areas of evangelism.
-        </p>
+
+      {/* Content Section */}
+      <section className="px-6 md:px-16 py-16 text-gray-800 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-lg md:text-xl leading-8 space-y-6">
+          <p>
+            This is the evangelistic wing of the Church. This Ministry
+            undertakes gospel rallies, crusades, conventions, house-to-house
+            evangelism, and other forms of outreach.
+          </p>
+          <p>
+            These include preaching, witnessing, winning and discipling souls,
+            and encouraging church members to participate in church programs and
+            ministries. It allows members to plan and organize evangelistic
+            activities in villages, towns, cities, and specialized ministries.
+          </p>
+          <p>
+            The ministry also provides counseling and ministers to prisoners,
+            emerging religious groups, the physically challenged, drug addicts,
+            politicians, and hospital patients. It organizes beach events and
+            other creative outreach activities.
+          </p>
+        </div>
+      </section>
+
+      {/* Images Section */}
+      <section className="px-6 md:px-16 py-16 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="/media/evangelism-1.jpeg"
+              alt="Evangelism outreach 1"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          <div className="overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="/media/evangelism-2.jpeg"
+              alt="Evangelism outreach 2"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+        </div>
       </section>
     </div>
   );
