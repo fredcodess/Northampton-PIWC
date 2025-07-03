@@ -169,7 +169,7 @@ const HomePage = () => {
           <QuickAccessCard
             icon={MdOutlineFamilyRestroom}
             title="Community"
-            description="Building strong bonds within our church family"
+            description="Building strong, meaningful bonds within our church family."
           />
           <QuickAccessCard
             icon={FaBookBible}
@@ -203,6 +203,10 @@ const HomePage = () => {
             </p>
             <div className="text-gray-800 bg-gray-100 p-4 rounded-lg w-fit shadow">
               <strong className="text-cyan-800">Sundays</strong>
+              <br />
+              KG House - Northampton
+              <br />
+              Unit L27, NN5 7QS
               <br />
               10:00 AM – 12:30 PM
             </div>
