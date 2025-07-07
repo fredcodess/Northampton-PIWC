@@ -1,10 +1,7 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 
 export const ContactFormHandler = () => {
   const form = useRef();
-  const [errors, setErrors] = useState({});
-  const [success, setSuccess] = useState(false);
 
   const validate = (formData) => {
     const newErrors = {};
@@ -17,41 +14,6 @@ export const ContactFormHandler = () => {
     if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
     if (!formData.message.trim()) newErrors.message = "Message is required.";
     return newErrors;
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const formData = {
-      name: form.current.name.value,
-      email: form.current.email.value,
-      subject: form.current.subject.value,
-      message: form.current.message.value,
-    };
-
-    const validationErrors = validate(formData);
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-
-    setErrors({}); // Clear previous errors
-
-    emailjs
-      .sendForm(
-        process.env.EmailJSServiceID,
-        process.env.EmailJSTemplateID,
-        form.current,
-        { publicKey: process.env.EmailJSUserID }
-      )
-      .then(() => {
-        console.log("SUCCESS!");
-        setSuccess(true);
-        form.current.reset();
-      })
-      .catch((error) => {
-        console.log("FAILED...", error.text);
-        setSuccess(false);
-      });
   };
 
   return (
