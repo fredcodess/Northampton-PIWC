@@ -1,45 +1,37 @@
-import React, { useState, useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const NewsLetterEmail = () => {
-  const joinForm = useRef();
-  const userID = "process.env.EmailJSUserID";
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    emailjs.init(userID);
-  }, []);
-
-  const handleJoinSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const serviceID = "process.env.EmailJSServiceID";
-    const templateID = "process.env.EmailJSTemplateID";
 
-    emailjs.sendForm(serviceID, templateID, joinForm.current).then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Thank you for joining!");
-        joinForm.current.reset();
-      },
-      (error) => {
-        console.log("FAILED...", error);
-        alert("Failed to join. Please try again.");
-      }
-    );
+    const formData = new FormData();
+    formData.append(import.meta.env.VITE_NEWSLETTER_EMAIL_ENTRY_ID, email);
+
+    await fetch(import.meta.env.VITE_NEWSLETTER_FORM_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: formData,
+    });
+
+    setEmail("");
+    setTimeout(() => {
+      toast.success("Thanks for subscribing!");
+    }, 800);
   };
 
   return (
     <div className="container">
-      <form
-        ref={joinForm}
-        onSubmit={handleJoinSubmit}
-        className="form-container"
-      >
+      <Toaster position="top-center" />
+      <form onSubmit={handleSubmit} className="form-container">
         <input
-          name="user_email"
-          id="user_email"
           type="email"
           placeholder="Your email"
           required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="w-full px-4 py-2 rounded-full bg-gray-800 text-white border-none focus:ring-2 focus:ring-primary"
         />
         <button
