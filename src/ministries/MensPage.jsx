@@ -6,7 +6,8 @@ import useTitle from "../components/useTitle";
 const MensPage = () => {
   const ministryData = {
     title: "Men's Ministry",
-    image: "/media/mens-2.jpeg",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492227/mens-2_wzsfer.jpg",
     meetings: "Every Sunday at 10:00 AM (during main service)",
     activities: [
       "Brotherhood Fellowship",

@@ -12,9 +12,10 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/media/logo.JPG"
+              src="https://res.cloudinary.com/df17ci9pu/image/upload/v1752490716/logo_g6cab6.jpg"
               alt="Church Logo"
               className="h-12 w-12 rounded-full shadow-lg"
+              loading="lazy"
             />
             <div>
               <h1 className="text-2xl font-bold text-white">

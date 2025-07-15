@@ -7,9 +7,9 @@ const ChildrensPage = () => {
   const ministryData = {
     title: "Children's Ministry",
     image: [
-      "/media/children-1.jpeg",
-      "/media/children-2.jpeg",
-      "/media/children-3.jpeg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492767/children-1_qto2er.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492768/children-2_wf84uw.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492768/children-3_gfp2m6.jpg",
     ],
     description:
       "Creating a safe, fun, and nurturing environment where children can learn about God's love through age-appropriate activities and lessons. This includes lessons on Salvation, Worship and Obedience.",

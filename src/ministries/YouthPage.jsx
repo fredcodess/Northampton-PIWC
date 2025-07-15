@@ -7,7 +7,11 @@ const YouthPage = () => {
   useTitle("Youth Ministey");
   const ministryData = {
     title: "Youth & Pensa",
-    image: ["/media/youth-4.jpg", "/media/youth-6.jpg", "/media/youth-2.jpeg"],
+    image: [
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492340/youth-4_lmvhbo.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492340/youth-6_ksk5io.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492328/youth-2_trw6wm.jpg",
+    ],
     description:
       "Empowering the next generation through dynamic worship, relevant teaching, and fun activities that build lasting friendships and strong faith.",
     meetings: "Every Friday at 6:00 PM",
@@ -18,7 +22,10 @@ const YouthPage = () => {
       "Youth Camps",
       "Family Fun Days",
     ],
-    video: ["/media/football-game.mp4", "/media/pensa.mp4"],
+    video: [
+      "https://res.cloudinary.com/df17ci9pu/video/upload/v1752492543/football-game_w22vzk.mp4",
+      "https://res.cloudinary.com/df17ci9pu/video/upload/v1752492561/pensa_jfz4x6.mp4",
+    ],
   };
 
   const [currentImage, setCurrentImage] = useState(0);

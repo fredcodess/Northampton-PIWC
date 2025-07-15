@@ -11,9 +11,9 @@ import WhatWeBelieve from "../components/WhatWeBelieve";
 import useTitle from "../components/useTitle";
 
 const bgImages = [
-  "/media/home-1.jpeg",
-  "/media/home-2.jpeg",
-  "/media/home-3.jpeg",
+  "https://res.cloudinary.com/df17ci9pu/image/upload/v1752422070/home-1_bj5edl.jpg",
+  "https://res.cloudinary.com/df17ci9pu/image/upload/v1752422070/home-2_tq0tvq.jpg",
+  "https://res.cloudinary.com/df17ci9pu/image/upload/v1752422070/home-3_axnpbg.jpg",
 ];
 
 const QuickAccessCard = ({ icon: Icon, title, description, link }) => (
@@ -41,27 +41,32 @@ const QuickAccessCard = ({ icon: Icon, title, description, link }) => (
 const ministries = [
   {
     name: "Men's MINISTRY",
-    image: "/media/MensMin.png",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752490700/MensMin_vj7xmc.png",
     href: "/mens-ministry",
   },
   {
     name: "Women's MINISTRY",
-    image: "/media/WomenMin.png",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752490700/WomenMin_u9bcsj.png",
     href: "/womens-ministry",
   },
   {
     name: "Children's MINISTRY",
-    image: "/media/ChildrensMin.png",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752490701/ChildrensMin_xjumxz.png",
     href: "/children-ministry",
   },
   {
     name: "Youth's MINISTRY",
-    image: "/media/YouthMin.png",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752490700/YouthMin_dumnyb.png",
     href: "/youth-ministry",
   },
   {
     name: "Evangelism's MINISTRY",
-    image: "/media/EvangelismMin.png",
+    image:
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752490700/EvangelismMin_adoxvi.png",
     href: "/evangelism-ministry",
   },
 ];

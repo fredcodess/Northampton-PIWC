@@ -7,9 +7,9 @@ const WomensPage = () => {
   const ministryData = {
     title: "Virtuous Ladies",
     image: [
-      "/media/women-3.jpeg",
-      "/media/women-2.jpeg",
-      "/media/women-1.jpeg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752491358/women-3_kk03qz.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752491358/women-2_ayztx3.jpg",
+      "https://res.cloudinary.com/df17ci9pu/image/upload/v1752491358/women-1_yshqzp.jpg",
     ],
   };
   useTitle("Women's Ministey");

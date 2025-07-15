@@ -64,7 +64,7 @@ const GivePage = () => {
           }}
         >
           <motion.img
-            src="/media/offering.jpg"
+            src="https://res.cloudinary.com/df17ci9pu/image/upload/v1752570912/offering_p7wken.jpg"
             alt="In-person offering"
             className="w-full md:w-1/2 h-100 rounded-xl shadow-lg object-cover"
             variants={fadeInVariant}
@@ -124,7 +124,7 @@ const GivePage = () => {
             />
           </motion.div>
           <motion.img
-            src="/media/cardpay.jpg"
+            src="https://res.cloudinary.com/df17ci9pu/image/upload/v1752570924/cardpay_vmqtxe.jpg"
             alt="Card payment"
             className="w-full md:w-1/2 h-auto rounded-xl shadow-lg object-cover"
             variants={fadeInVariant}

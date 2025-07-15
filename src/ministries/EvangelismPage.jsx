@@ -59,24 +59,25 @@ const EvangelismPage = () => {
 
       <section className="px-6 md:px-16 py-20 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          {["/media/evangelism-1.jpeg", "/media/evangelism-2.jpeg"].map(
-            (src, idx) => (
-              <motion.div
-                key={idx}
-                initial={idx % 2 === 0 ? "hiddenLeft" : "hiddenRight"}
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                variants={imageVariants}
-                className="overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
-              >
-                <img
-                  src={src}
-                  alt={`Evangelism outreach ${idx + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </motion.div>
-            )
-          )}
+          {[
+            "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492685/evangelism-1_egqwxh.jpg",
+            "https://res.cloudinary.com/df17ci9pu/image/upload/v1752492671/evangelism-2_bg3nuj.jpg",
+          ].map((src, idx) => (
+            <motion.div
+              key={idx}
+              initial={idx % 2 === 0 ? "hiddenLeft" : "hiddenRight"}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.4 }}
+              variants={imageVariants}
+              className="overflow-hidden rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              <img
+                src={src}
+                alt={`Evangelism outreach ${idx + 1}`}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </motion.div>
+          ))}
         </div>
       </section>
 
